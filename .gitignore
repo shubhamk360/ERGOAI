@@ -1,0 +1,9 @@
+.venv/
+.ruff_cache/
+__pycache__/
+*.pyc
+.DS_Store
+data/exports/
+models/
+patch.py
+test_fragment.py

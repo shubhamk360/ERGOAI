@@ -1,0 +1,10 @@
+{
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    "python.analysis.extraPaths": [
+        "./posture_detection_opencv_mediapipe/src"
+    ],
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportPossiblyUnboundVariable": "none",
+        "reportMissingImports": "none"
+    }
+}
