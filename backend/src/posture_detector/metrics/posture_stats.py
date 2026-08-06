@@ -57,6 +57,11 @@ class PostureStatisticsTracker:
             return
 
         elapsed_seconds = current_timestamp - self.last_timestamp
+        
+        # Prevent massive time jumps when the user pauses the webcam or the network drops.
+        if elapsed_seconds > 2.0:
+            elapsed_seconds = 0.0
+
         if self.current_label in self.posture_durations and elapsed_seconds >= 0:
             self.posture_durations[self.current_label] += elapsed_seconds
 

@@ -18,8 +18,8 @@ const LiveDetection: React.FC = () => {
 
   // Attach the global stream to the local video element for preview
   useEffect(() => {
-    if (videoRef.current && stream) {
-      videoRef.current.srcObject = stream;
+    if (videoRef.current) {
+      videoRef.current.srcObject = stream || null;
     }
   }, [stream]);
 
