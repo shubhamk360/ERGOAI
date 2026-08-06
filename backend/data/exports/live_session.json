@@ -1,0 +1,17 @@
+{
+  "date": "2026-08-05",
+  "good_posture_seconds": 254.74,
+  "mild_slouch_seconds": 44.49,
+  "severe_slouch_seconds": 21.17,
+  "total_tracked_seconds": 320.4,
+  "good_posture_count": 175,
+  "mild_slouch_count": 224,
+  "severe_slouch_count": 66,
+  "timestamp": "2026-08-05T10:28:16.253309+00:00",
+  "current_posture_label": "Session ended",
+  "neck_angle": null,
+  "back_angle": null,
+  "good_posture_percent": 79.51,
+  "bad_posture_percent": 20.49,
+  "bad_posture_seconds": 65.66
+}

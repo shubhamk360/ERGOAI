@@ -1,0 +1,17 @@
+opencv-python
+mediapipe
+numpy
+pandas
+streamlit
+fastapi
+uvicorn
+python-multipart
+pyjwt
+passlib[bcrypt]
+sqlalchemy
+psycopg2-binary
+alembic
+scikit-learn
+websockets
+google-auth
+requests

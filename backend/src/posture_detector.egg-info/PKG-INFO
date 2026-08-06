@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: posture-detector
+Version: 0.1.0
+Summary: ERGOAI Posture Detection using OpenCV and MediaPipe
+Requires-Dist: opencv-python
+Requires-Dist: mediapipe
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: streamlit
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: python-multipart
+Requires-Dist: pyjwt
+Requires-Dist: passlib[bcrypt]
+Requires-Dist: sqlalchemy
+Requires-Dist: psycopg2-binary
+Requires-Dist: alembic
+Requires-Dist: scikit-learn
+Requires-Dist: websockets
+Requires-Dist: google-auth
+Requires-Dist: requests
