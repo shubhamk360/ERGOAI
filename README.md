@@ -23,13 +23,16 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install -e .
 
-# Initialize the empty database
+# Set up your PostgreSQL database connection
+export DATABASE_URL="postgresql://localhost/ergoai"
+
+# Initialize the database schema
 alembic upgrade head
 
 # Start the server
 python3 -m uvicorn posture_detector.api.main:app --host 0.0.0.0 --port 8000 --reload
 ```
-*Note: A local SQLite database is generated at `backend/data/posture.db`. This file is ignored by Git to protect user data.*
+*Note: Make sure your local PostgreSQL database is running and accessible before starting the server. You can also define the database connection in a `backend/.env` file.*
 
 ### 2. Frontend Setup
 

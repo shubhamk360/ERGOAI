@@ -4,7 +4,7 @@ Modular Python project for real-time posture analysis using OpenCV for capture/r
 
 ## Local Setup & Initialization
 
-To get the backend running locally, follow these steps to initialize your virtual environment and local database. **Note:** The local SQLite database (`data/posture.db`) is ignored in Git to protect sensitive user data. You must generate your own empty seed database.
+To get the backend running locally, follow these steps to initialize your virtual environment and local database. **Note:** You must have a PostgreSQL instance running locally or hosted remotely, and provide its connection string.
 
 1. **Install Dependencies**
    ```bash
@@ -14,10 +14,11 @@ To get the backend running locally, follow these steps to initialize your virtua
    pip install -e ./backend
    ```
 
-2. **Initialize the Seed Database**
-   We use Alembic for database migrations. To generate an empty `posture.db` with the correct schema, run:
+2. **Initialize the Database**
+   We use Alembic for database migrations. To generate the correct schema on your PostgreSQL instance, set your `DATABASE_URL` (e.g. in a `.env` file) and run:
    ```bash
    cd backend
+   export DATABASE_URL="postgresql://localhost/ergoai"
    alembic upgrade head
    ```
 
